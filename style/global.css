@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #F8F0E6
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4ee;
+    color: #17213f;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}

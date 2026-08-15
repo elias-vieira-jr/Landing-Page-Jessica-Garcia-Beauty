@@ -1,0 +1,33 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px 0 0;
+
+    background-color: var(--cor0);
+}
+
+.logo img {
+    width: auto;
+    height: 72px;
+}
+
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.nav-end {
+    text-align: end;
+}
+
+.nav-end a {
+    background-color: black;
+    color: var(--cor0);
+    padding: 8px;
+    border-radius: 8px;
+}
