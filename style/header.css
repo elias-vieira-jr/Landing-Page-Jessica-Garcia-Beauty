@@ -2,50 +2,73 @@
     background-color: var(--cor0);
 }
 
-.navbar_container {
+/* -------------------------------------------------- */
+
+.navbar__container {
+    width: 100%;
     max-width: 1180px;
-    margin: 0 auto;
     height: 72px;
+
+    margin: 0 auto;
+    padding: 0 32px;
 
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    padding: 0 40px 0 0;
 }
 
-.logo img {
+/* -------------------------------------------------- */
+/* --- LOGO --- */
+
+.navbar__logo img {
+    display: block;
     width: auto;
     height: 64px;
 }
 
-.nav-menu ul {
+/* -------------------------------------------------- */
+/* --- MENU --- */
+
+.navbar__menu ul {
     display: flex;
     align-items: center;
     gap: 30px;
 
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
-.nav-end {
+.navbar__menu a {
+    color: #000;
+    font-weight: 500;
+}
+
+/* -------------------------------------------------- */
+/* --- CTA --- */
+
+.navbar__cta {
     display: flex;
     justify-content: flex-end;
 }
 
-.nav-end a {
+.navbar__cta a {
     display: inline-block;
+
     padding: 10px 18px;
 
     background-color: #000;
     color: var(--cor0);
 
     border-radius: 8px;
+
     font-weight: 600;
-    
+
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-
-.nav-end a:hover {
+.navbar__cta a:hover {
     transform: translateY(-2px);
     opacity: 0.9;
 }
