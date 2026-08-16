@@ -41,8 +41,28 @@
 }
 
 .navbar__menu a {
+    position: relative;
     color: #000;
-    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbar__menu a::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 1px;
+
+    background-color: #000;
+
+    transition: width 0.3s ease;
+}
+
+.navbar__menu a:hover::after {
+    width: 100%;
 }
 
 /* -------------------------------------------------- */
