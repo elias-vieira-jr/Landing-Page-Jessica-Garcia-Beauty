@@ -1,14 +1,105 @@
 .hero {
     min-height: 90vh;
+
     background-image: url("../images/hero.jpg");
     background-size: cover;
     background-position: center;
+
     position: relative;
+
+    display: flex;
+    align-items: center;
 }
 
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.35);
+
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.65) 0%,
+        rgba(0, 0, 0, 0.35) 45%,
+        rgba(0, 0, 0, 0.05) 100%
+    );
+}
+
+/* -------------------------------------------------- */
+/* --- CONTENT --- */
+
+.hero__content {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+    padding: 0 32px;
+
+    color: #fff;
+}
+
+/* --- TAG --- */
+
+.hero__tag {
+    margin-bottom: 20px;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+/* --- H1 --- */
+
+.hero h1 {
+    max-width: 650px;
+
+    margin: 0 0 24px;
+
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 1.05;
+    font-weight: 500;
+}
+
+/* --- SUB --- */
+
+.hero__sub {
+    max-width: 550px;
+
+    margin-bottom: 32px;
+
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* --- ACTIONS --- */
+
+.hero__actions {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.hero__actions a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-primary {
+    padding: 15px 26px;
+    border-radius: 16px;
+
+    background-color: #fff;
+    color: #222 !important;
+
+    font-weight: 600;
+
+    transition: transform 0.3s ease,
+                background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
 }
