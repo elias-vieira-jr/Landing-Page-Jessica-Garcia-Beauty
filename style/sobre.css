@@ -1,0 +1,10 @@
+.sobre {
+    min-height: 50vh;
+
+    background-color: black;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
