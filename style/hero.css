@@ -58,17 +58,6 @@
     color: #fff;
 }
 
-/* --- TAG --- */
-
-.hero__tag {
-    margin-bottom: 20px;
-
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-}
-
 /* --- H1 --- */
 
 .hero h1 {
