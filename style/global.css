@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 :root {
-    --cor0: #F8EFE6
-    --cor1: #0A1940
+    --cor0: #F8EFE6;
+    --cor1: #0A1940;
 }
 
 * {
