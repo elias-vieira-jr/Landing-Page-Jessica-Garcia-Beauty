@@ -20,10 +20,15 @@
 /* -------------------------------------------------- */
 /* --- LOGO --- */
 
+.navbar__logo {
+    width: max-content;
+}
+
 .navbar__logo img {
     display: block;
     width: auto;
     height: 64px;
+    flex-shrink: 0;
 }
 
 /* -------------------------------------------------- */
