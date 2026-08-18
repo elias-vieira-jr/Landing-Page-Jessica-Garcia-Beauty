@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 :root {
-    --cor0: #F8F0E6
+    --cor0: #F8EFE6
+    --cor1: #0A1940
 }
 
 * {
@@ -12,8 +13,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f4ee;
-    color: #17213f;
+    background-color: #f0f0f0;
 }
 
 img {
